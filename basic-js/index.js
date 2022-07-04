@@ -1,7 +1,7 @@
 var config = {
     type: Phaser.AUTO,
-    width: 800,
-    height: 600,
+    width: 1920,
+    height: 1080,
     physics: {
         default: 'arcade',
         arcade: {
@@ -32,7 +32,7 @@ function create ()
     var particles = this.add.particles('red');
 
     var emitter = particles.createEmitter({
-        speed: 100,
+        speed: 250,
         scale: { start: 1, end: 0 },
         blendMode: 'ADD'
     });
